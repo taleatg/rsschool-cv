@@ -21,3 +21,16 @@ No experience in development yet
 -JavaScript; 
 -Html; 
 -CSS.
+
+##Code examples 
+`` ` 
+function number(phone){ 
+while ((phone.length!==12) || (isNaN(phone)) || phone.charAt(0)!='+') { 
+phone=prompt('Ошибка, введите 12 символов'); 
+} 
+return alert('ваш номер:'+formattedPhone(phone)); 
+} 
+``
+
+##English 
+level A2 but I'm working on it
