@@ -1,0 +1,15 @@
+body {
+    "Helvetica", "Arial", "Avantgarde", sans-serif;
+    background: url(background.jpg) no-repeat center center fixed;
+    background-size: 100%;
+}
+header {
+    text-align: center;
+}
+div {
+    width: 1024px;
+}
+img {
+    height: 20%;
+    width: 20%;
+}
