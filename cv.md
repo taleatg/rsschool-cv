@@ -13,10 +13,12 @@ I am a Junior Front-End developer. Every day I use my coding skills, improve the
 that there is no limit to perfection and is necessary to study all life.
 
 ## Skills
-- **React 2022 Q1** The Rolling Scopes School (Mar. 2022 - June 2022)
-- **JAVASCRIPT/FRONT-END 2021Q3** The Rolling Scopes School (Sept. 2021 - Mar. 2022)
-- **JS/FE Pre-School** at The Rolling Scopes School (July 2021 - Sept. 2021)
-- **Bachelor of Mathematics, Scientific and pedagogical activity** at Gomel State University named after Francis Scarana (2014 - 2018)
+
+- HTML
+- CSS / SCSS
+- JavaScript
+- TypeScript
+- React
 
 ## Code examples
 
@@ -32,6 +34,13 @@ const getInfo = (field: Languages[] | Currencies[]) => {
 - [museum](https://taleatg.github.io/museum/)
 - [Christmas Tree](https://taleatg.github.io/christmas-tree/)
 - [REST-Countries-API](https://rest-countries-api-by-taleatg.netlify.app/)
+
+## Education
+
+- **React 2022 Q1** The Rolling Scopes School (Mar. 2022 - June 2022)
+- **JAVASCRIPT/FRONT-END 2021Q3** The Rolling Scopes School (Sept. 2021 - Mar. 2022)
+- **JS/FE Pre-School** at The Rolling Scopes School (July 2021 - Sept. 2021)
+- **Bachelor of Mathematics, Scientific and pedagogical activity** at Gomel State University named after Francis Scarana (2014 - 2018)
 
 ## English 
 
