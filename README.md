@@ -1,1 +1,1 @@
-# rsschool-cv
+https://taleatg.github.io/rsschool-cv/cv
