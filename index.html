@@ -9,98 +9,170 @@
     <title>Tatsiana Dashuk</title>
 </head>
 <body>
-    <header>
-        <h1>Tatsiana Dashuk</h1>
+    <header class="header">
+        <nav>
+            <ul class="navigation">
+                <li><a href="#home" class="navigation__item">Home</a></li>
+                <li><a href="#summary" class="navigation__item">About</a></li>
+                <li><a href="#skills" class="navigation__item">Skills</a></li>
+                <li><a href="#code" class="navigation__item">Code examples</a></li>
+                <li><a href="#experience" class="navigation__item">Experience</a></li>
+                <li><a href="#education" class="navigation__item">Education</a></li>
+                <li><a href="#contacts" class="navigation__item">Contacts</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <div class="contacts">
-            <h2>Contact info</h2>
-            <ul>
-                <li>
-                    <a href="https://t.me/taleatg">Telegram</a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/tatsiana-dashuk/">Linkedin</a>
-                </li>
-                <li>
-                    <a href="mailto:tatsiana.dashuk@gmail.com">Gmail</a>
-                </li>
-                <li>
-                    <a href="https://join.skype.com/invite/i0hbVHKUdf4J">Skype</a>
-                </li>
-            </ul>
-        </div>
-        <div class="summary">
-            <h2>Summary</h2>
-            <div>I am a Junior Front-End developer. Every day I use my coding skills, improve them and learn something new. I believe
-                that there is no limit to perfection and is necessary to study all life.
-            </div>
-        </div>
-        <div class="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS / SCSS</li>
-                <li>JavaScript</li>
-                <li>TypeScript</li>
-                <li>React</li>
-            </ul>
-        </div>
-        <div class="code">
-            <h2>Code examples</h2>
-            <pre>
-                <code>
-                    const getInfo = (field: Languages[] | Currencies[]) => {
-                        const name = field.map((item) => item.name);
-                        return name.join(', ');
-                    };
-                </code>
-            </pre>
-        </div>
-        <div class="experience">
-            <h2>Experience</h2>
-            <ul>
-                <li>
-                    <a href="https://taleatg.github.io/museum/">Museum</a>
-                </li>
-                 <li>
-                    <a href="https://taleatg.github.io/christmas-tree/">Christmas Tree</a>
-                </li>
-                 <li>
-                    <a href="https://rest-countries-api-by-taleatg.netlify.app/">REST-Countries-API</a>
-                </li>
-            </ul>
-        </div>
-        <div class="education">
-            <h2>Education</h2>
-            <ol>
-                <li>Bachelor of Mathematics, Scientific and pedagogical activity at Gomel State University named after Francis Scarana (2014 - 2018)</li>
-                <li>JS/FE Pre-School at The Rolling Scopes School (July 2021 - Sept. 2021)</li>
-                <li>JAVASCRIPT/FRONT-END 2021Q3 The Rolling Scopes School (Sept. 2021 - Mar. 2022)</li>
-                <li>React 2022 Q1 The Rolling Scopes School (Mar. 2022 - June 2022)</li>
-            </ol>
-        </div>
-        <div class="english">
-            <h2>English</h2>
-            <div>Now my English level is A2, but I'm working on it.</div>
-        </div>
-    </main>
-    <footer>
-        <div>
-            <div>© 2022</div>
+    <main class="main">
+        <section class="main-block" id="home">
+            <img src="./assets/img/main-photo.webp" alt="main photo" class="main-photo">
             <div>
+                <h1>Tatsiana Dashuk</h1>
+                <div class="developer">I'm a Frontend Developer</div>
+                <div class="button"><a href="#contacts">Contact me</a></div>
+            </div>
+        </section>
+        <section class="summary" id="summary">
+            <div class="information-block">
+                <img src="./assets/img/about-me.webp" alt="about me">
+                <div class="summary__information">
+                    <h2>About me</h2>
+                    <div class="text-information">
+                        I am a junior Frontend developer. I decided to change my career from a teacher where
+                        I taught children basic programming and math to a developer. At the present time I am actively
+                        learning JS, TS, React, taking different trainings. Every day I use my coding skills, improve
+                        them and learn something new. I believe that there is no limit to perfection and is necessary
+                        to study all life. Currently I am looking for an opportunity to start my career as a Fronted developer.
+                    </div>
+                    <div class="button"><a href="./assets/img/CV_TatsianaDashuk.png" download>Download Resume</a></div>
+                </div>
+            </div>
+        </section>
+        <section class="skills" id="skills">
+            <div class="information-block">
                 <div>
+                    <h2>My Skills</h2>
+                    <ul class="skills_wrapper">
+                        <li><img src="./assets/svg/html5.svg" alt="html5" class="skill_item"></li>
+                        <li><img src="./assets/svg/css3.svg" alt="css3" class="skill_item"></li>
+                        <li><img src="./assets/svg/sass.svg" alt="sass" class="skill_item"></li>
+                        <li><img src="./assets/svg/javascript.svg" alt="javascript" class="skill_item"></li>
+                        <li><img src="./assets/svg/typescript.svg" alt="typescript" class="skill_item"></li>
+                        <li><img src="./assets/svg/react.svg" alt="react" class="skill_item"></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="code" id="code">
+            <div class="information-block">
+                <div>
+                    <h2>Code examples</h2>
+                    <pre>
+                        <code>
+                            const getInfo = (field: Languages[] | Currencies[]) => {
+                                const name = field.map((item) => item.name);
+                                return name.join(', ');
+                            };
+                        </code>
+                    </pre>
+                </div>
+                <img src="./assets/img/code-examples.webp" alt="code examples">
+            </div>
+        </section>
+        <section class="experience" id="experience">
+            <div class="information-block">
+                <div>
+                    <h2>Experience</h2>
+                    <ul class="experience__wrapper">
+                        <li>
+                            <a href="https://rest-countries-api-by-taleatg.netlify.app/" target="_blank" class="experience__item">
+                                <img src="./assets/img/rest-countries-api.JPG" alt="REST-Countries-API" class="image">
+                                <div>REST-Countries-API</div>
+                            </a>
+                        </li>
+                         <li>
+                            <a href="https://taleatg.github.io/christmas-tree/" target="_blank" class="experience__item">
+                                <img src="./assets/img/christmas_tree.JPG" alt="Christmas Tree" class="image">
+                                <div>Christmas Tree</div>
+                            </a>
+                        </li>
+                         <li>
+                             <a href="https://taleatg.github.io/museum/" target="_blank" class="experience__item">
+                                 <img src="./assets/img/museum.JPG" alt="Museum" class="image">
+                                 <div>Museum</div>
+                             </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="education" id="education">
+            <div class="information-block">
+                <div>
+                    <h2>Education</h2>
+                    <ul class="education__wrapper">
+                        <li>
+                            <a href="https://app.rs.school/certificate/cqprew46" target="_blank" class="education__item">
+                                <img src="./assets/img/JS_pre-school.JPG" alt="JS/FE pre-school" class="image">
+                                <div>JS/FE Pre-School at The Rolling Scopes School (July 2021 - Sept. 2021)</div>
+                            </a>
+                        </li>
+                        <li>
+                             <a href="https://app.rs.school/certificate/dvqife9k" target="_blank" class="education__item">
+                                <img src="./assets/img/JS_FE.JPG" alt="JS/FE 2022" class="image">
+                                <div>JAVASCRIPT/FRONT-END 2021Q3 The Rolling Scopes School (Sept. 2021 - Mar. 2022)</div>
+                             </a>
+                        </li>
+                        <li>
+                             <a href="https://app.rs.school/certificate/hw655fxf" target="_blank" class="education__item">
+                                <img src="./assets/img/React.JPG" alt="React" class="image">
+                                <div>React 2022 Q1 The Rolling Scopes School (Mar. 2022 - June 2022)</div>
+                             </a>
+                        </li>
+                        <li>
+                             <a href="https://app.rs.school/certificate/1ql9anb2" target="_blank" class="education__item">
+                                <img src="./assets/img/NodeJS.JPG" alt="NodeJS" class="image">
+                                <div>NodeJS 2022 Q2 The Rolling Scopes School (June 2022 - July 2022)</div>
+                             </a>
+                        </li>
+                    </ul>
+                    <div class="english">Now my English level is A2, but I'm working on it.</div>
+                </div>
+            </div>
+        </section>
+        <section class="contacts" id="contacts">
+            <div class="information-block">
+                <img src="./assets/img/contact_me.webp" alt="contact info">
+                <div>
+                    <h2>Contact info</h2>
+                    <ul>
+                        <li>
+                            <a href="https://t.me/taleatg">Telegram</a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/tatsiana-dashuk/">Linkedin</a>
+                        </li>
+                        <li>
+                            <a href="mailto:tatsiana.dashuk@gmail.com">Gmail</a>
+                        </li>
+                        <li>
+                            <a href="https://join.skype.com/invite/i0hbVHKUdf4J">Skype</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div>© September 2022</div>
+            <div class="necessary-links">
+                <a href="https://github.com/taleatg" target="_blank" class="necessary-links__item">
+                    <img src="./assets/img/github.png" alt="github" class="github">
                     <div>Tatsiana Dashuk</div>
-                    <a href="https://github.com/taleatg">
-                        <img src="./assets/github.png" alt="github">
-                        <div>@taleatg</div>
-                    </a>
-                </div>
-                <div>
-                    <a href="https://rs.school/js-en/">
-                        <img src="./assets/rsschool.png" alt="rs-school">
-                        <div>RS School</div></a>
-                </div>
+                </a>
+                <a href="https://rs.school/js-en/" target="_blank" class="necessary-links__item">
+                    <img src="./assets/img/rsschool.png" alt="rs-school" class="rs-school">
+                </a>
             </div>
         </div>
     </footer>

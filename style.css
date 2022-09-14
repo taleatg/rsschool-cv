@@ -1,1 +1,190 @@
+body {
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    background: #020202;
+    color: #FFFFFF;
+}
 
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+h1 {
+    color: #FFB800;
+    font-size: 92px;
+}
+
+h2 {
+    font-size: 42px;
+}
+
+li {
+    list-style: none;
+}
+
+.header {
+    position: fixed;
+    background: #020202;
+    width: 100%;
+    z-index: 10;
+}
+
+.navigation {
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 20px;
+    display: flex;
+    justify-content: right;
+    line-height: 24px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.navigation__item {
+    cursor: pointer;
+    transition: 0.5s;
+    margin: 0 10px;
+}
+
+.navigation__item:hover {
+    color: #FFB800;
+}
+
+.information-block {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1440px;
+    height: 100%;
+    padding: 75px 10px;
+}
+
+.summary, .code, .education {
+    background: #252525;
+}
+
+.main-block {
+    margin: 0 auto;
+    max-width: 1440px;
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.main-photo {
+    width: 650px;
+}
+
+.button {
+    font-size: 24px;
+    border: 2px solid #FFB800;
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+    color: #FFB800;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.button:hover {
+    color: #FFFFFF;
+    transform: scale(1.1);
+}
+
+.developer {
+    font-size: 32px;
+    margin: -20px 0 100px;
+}
+
+.text-information {
+    font-size: 28px;
+    margin-bottom: 100px;
+}
+
+.skills_wrapper {
+    color: #FFB800;
+    font-size: 72px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skill_item {
+    width: 150px;
+    height: 150px;
+    margin: 20px 150px 20px 0;
+    border: 2px solid;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.experience .information-block, .education .information-block {
+    justify-content: center;
+}
+
+.experience__wrapper, .education__wrapper {
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.experience__item, .education__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    padding: 20px;
+    border: 2px solid #FFB800;
+    border-radius: 10px;
+    width: 370px;
+    height: 370px;
+    transition: 0.5s;
+}
+
+.experience__item:hover, .education__item:hover {
+    transform: scale(1.1);
+}
+
+.image {
+    width: 350px;
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+.footer {
+    background: #FFB800;
+    color: #020202;
+    padding: 10px;
+}
+
+.footer__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.necessary-links, .necessary-links__item {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    transition: 0.5s;
+    color: #020202;
+}
+
+.necessary-links__item:hover {
+    transform: scale(1.15);
+}
+
+.github, .rs-school {
+    height: 30px;
+}
