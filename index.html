@@ -6,6 +6,10 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/image/profile_icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/agate.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
     <title>Tatsiana Dashuk</title>
 </head>
 <body>
@@ -24,7 +28,7 @@
     </header>
     <main class="main">
         <section class="main-block" id="home">
-            <img src="./assets/img/main-photo.webp" alt="main photo" class="main-photo">
+            <img src="./assets/image/main-photo.webp" alt="main photo" class="main-photo">
             <div>
                 <h1>Tatsiana Dashuk</h1>
                 <div class="developer">I'm a Frontend Developer</div>
@@ -33,7 +37,7 @@
         </section>
         <section class="summary" id="summary">
             <div class="information-block">
-                <img src="./assets/img/about-me.webp" alt="about me">
+                <img src="./assets/image/about-me.webp" alt="about me">
                 <div class="summary__information">
                     <h2>About me</h2>
                     <div class="text-information">
@@ -43,7 +47,7 @@
                         them and learn something new. I believe that there is no limit to perfection and is necessary
                         to study all life. Currently I am looking for an opportunity to start my career as a Fronted developer.
                     </div>
-                    <div class="button"><a href="./assets/img/CV_TatsianaDashuk.png" download>Download Resume</a></div>
+                    <div class="button"><a href="./assets/image/CV_TatsianaDashuk.png" download>Download Resume</a></div>
                 </div>
             </div>
         </section>
@@ -66,16 +70,16 @@
             <div class="information-block">
                 <div>
                     <h2>Code examples</h2>
-                    <pre>
+                    <pre class="language-js">
                         <code>
-                            const getInfo = (field: Languages[] | Currencies[]) => {
-                                const name = field.map((item) => item.name);
-                                return name.join(', ');
-                            };
+const getInfo = (field: Languages[] | Currencies[]) => {
+    const name = field.map((item) => item.name);
+    return name.join(', ');
+};
                         </code>
                     </pre>
                 </div>
-                <img src="./assets/img/code-examples.webp" alt="code examples">
+                <img src="./assets/image/code-examples.webp" alt="code examples">
             </div>
         </section>
         <section class="experience" id="experience">
@@ -85,19 +89,19 @@
                     <ul class="experience__wrapper">
                         <li>
                             <a href="https://rest-countries-api-by-taleatg.netlify.app/" target="_blank" class="experience__item">
-                                <img src="./assets/img/rest-countries-api.JPG" alt="REST-Countries-API" class="image">
+                                <img src="./assets/image/rest-countries-api.JPG" alt="REST-Countries-API" class="image">
                                 <div>REST-Countries-API</div>
                             </a>
                         </li>
                          <li>
                             <a href="https://taleatg.github.io/christmas-tree/" target="_blank" class="experience__item">
-                                <img src="./assets/img/christmas_tree.JPG" alt="Christmas Tree" class="image">
+                                <img src="./assets/image/christmas_tree.JPG" alt="Christmas Tree" class="image">
                                 <div>Christmas Tree</div>
                             </a>
                         </li>
                          <li>
                              <a href="https://taleatg.github.io/museum/" target="_blank" class="experience__item">
-                                 <img src="./assets/img/museum.JPG" alt="Museum" class="image">
+                                 <img src="./assets/image/museum.JPG" alt="Museum" class="image">
                                  <div>Museum</div>
                              </a>
                         </li>
@@ -112,25 +116,25 @@
                     <ul class="education__wrapper">
                         <li>
                             <a href="https://app.rs.school/certificate/cqprew46" target="_blank" class="education__item">
-                                <img src="./assets/img/JS_pre-school.JPG" alt="JS/FE pre-school" class="image">
+                                <img src="./assets/image/JS_pre-school.JPG" alt="JS/FE pre-school" class="image">
                                 <div>JS/FE Pre-School at The Rolling Scopes School (July 2021 - Sept. 2021)</div>
                             </a>
                         </li>
                         <li>
                              <a href="https://app.rs.school/certificate/dvqife9k" target="_blank" class="education__item">
-                                <img src="./assets/img/JS_FE.JPG" alt="JS/FE 2022" class="image">
+                                <img src="./assets/image/JS_FE.JPG" alt="JS/FE 2022" class="image">
                                 <div>JAVASCRIPT/FRONT-END 2021Q3 The Rolling Scopes School (Sept. 2021 - Mar. 2022)</div>
                              </a>
                         </li>
                         <li>
                              <a href="https://app.rs.school/certificate/hw655fxf" target="_blank" class="education__item">
-                                <img src="./assets/img/React.JPG" alt="React" class="image">
+                                <img src="./assets/image/React.JPG" alt="React" class="image">
                                 <div>React 2022 Q1 The Rolling Scopes School (Mar. 2022 - June 2022)</div>
                              </a>
                         </li>
                         <li>
                              <a href="https://app.rs.school/certificate/1ql9anb2" target="_blank" class="education__item">
-                                <img src="./assets/img/NodeJS.JPG" alt="NodeJS" class="image">
+                                <img src="./assets/image/NodeJS.JPG" alt="NodeJS" class="image">
                                 <div>NodeJS 2022 Q2 The Rolling Scopes School (June 2022 - July 2022)</div>
                              </a>
                         </li>
@@ -141,21 +145,33 @@
         </section>
         <section class="contacts" id="contacts">
             <div class="information-block">
-                <img src="./assets/img/contact_me.webp" alt="contact info">
+                <img src="./assets/image/contact_me.webp" alt="contact info">
                 <div>
                     <h2>Contact info</h2>
                     <ul>
                         <li>
-                            <a href="https://t.me/taleatg">Telegram</a>
+                            <a href="https://www.linkedin.com/in/tatsiana-dashuk/" target="_blank" class="contact-link">
+                                <img src="./assets/svg/linkedin.svg" alt="Linkedin" class="social-network">
+                                <div>Linkedin</div>
+                            </a>
                         </li>
                         <li>
-                            <a href="https://www.linkedin.com/in/tatsiana-dashuk/">Linkedin</a>
+                            <a href="https://t.me/taleatg" target="_blank" class="contact-link">
+                                <img src="./assets/svg/telegram.svg" alt="Telegram" class="social-network">
+                                <div>@taleatg</div>
+                            </a>
                         </li>
                         <li>
-                            <a href="mailto:tatsiana.dashuk@gmail.com">Gmail</a>
+                            <a href="mailto:tatsiana.dashuk@gmail.com" target="_blank" class="contact-link">
+                                <img src="./assets/svg/gmail.svg" alt="Gmail" class="social-network">
+                                <div>tatsiana.dashuk@gmail.com</div>
+                            </a>
                         </li>
                         <li>
-                            <a href="https://join.skype.com/invite/i0hbVHKUdf4J">Skype</a>
+                            <a href="https://join.skype.com/invite/i0hbVHKUdf4J" target="_blank" class="contact-link">
+                                <img src="./assets/svg/skype.svg" alt="Skype"  class="social-network">
+                                <div>live: .cid.892fd13a33567fb9</div>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -167,11 +183,11 @@
             <div>© September 2022</div>
             <div class="necessary-links">
                 <a href="https://github.com/taleatg" target="_blank" class="necessary-links__item">
-                    <img src="./assets/img/github.png" alt="github" class="github">
+                    <img src="./assets/image/github.png" alt="github" class="github">
                     <div>Tatsiana Dashuk</div>
                 </a>
                 <a href="https://rs.school/js-en/" target="_blank" class="necessary-links__item">
-                    <img src="./assets/img/rsschool.png" alt="rs-school" class="rs-school">
+                    <img src="./assets/image/rsschool.png" alt="rs-school" class="rs-school">
                 </a>
             </div>
         </div>

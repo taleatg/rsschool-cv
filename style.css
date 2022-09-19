@@ -1,7 +1,12 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
 body {
     margin: 0;
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     letter-spacing: 1px;
     background: #020202;
     color: #FFFFFF;
@@ -19,6 +24,10 @@ h1 {
 
 h2 {
     font-size: 42px;
+}
+
+ul {
+    padding: 0;
 }
 
 li {
@@ -103,13 +112,11 @@ li {
 }
 
 .text-information {
-    font-size: 28px;
     margin-bottom: 100px;
 }
 
 .skills_wrapper {
     color: #FFB800;
-    font-size: 72px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -151,6 +158,32 @@ li {
 
 .experience__item:hover, .education__item:hover {
     transform: scale(1.1);
+}
+
+.contacts .information-block {
+    justify-content: space-around;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+    transition: 0.5s;
+}
+
+.contact-link:hover {
+    color: #FFB800;
+}
+
+.social-network {
+    width: 50px;
+    height: 50px;
+    padding-right: 25px;
+    transition: 0.5s;
+}
+
+.contact-link:hover .social-network {
+    transform: scale(1.2);
 }
 
 .image {
