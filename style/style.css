@@ -1,0 +1,306 @@
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  background: #020202;
+  color: #FFFFFF;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+a:hover {
+  color: #FFB800;
+}
+
+h1 {
+  color: #FFB800;
+  font-size: 92px;
+}
+
+h2 {
+  font-size: 42px;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+code {
+  max-width: calc(100vw - 500px);
+}
+
+.header {
+  position: fixed;
+  background: #020202;
+  width: 100%;
+  z-index: 10;
+}
+
+.header .navigation {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  line-height: 24px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.header .navigation__item {
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.header .navigation__item:hover {
+  color: #FFB800;
+}
+
+.main-block {
+  margin: 0 auto;
+  padding: 20vh 0;
+  max-width: 1440px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-block .main-block__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-block .main-photo {
+  width: 650px;
+}
+
+.main-block .developer {
+  font-size: 32px;
+  margin: -20px 0 100px;
+}
+
+.button {
+  font-size: 24px;
+  border: 2px solid #FFB800;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 0 auto;
+  color: #FFB800;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: #FFFFFF;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.information-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  max-width: 1440px;
+  height: 100%;
+  padding: 55px 15px;
+}
+
+.information-block .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 5vh 0;
+}
+
+.information-block .text-information {
+  margin-bottom: 100px;
+}
+
+.information-block .skills_wrapper {
+  color: #FFB800;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.information-block .skills_wrapper .skill_item {
+  width: 150px;
+  height: 150px;
+  margin: 20px 50px 20px 0;
+  border: 2px solid;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.information-block .experience__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 16px;
+}
+
+.information-block .experience__wrapper .experience__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 15px;
+  padding: 10px;
+  border: 2px solid #FFB800;
+  border-radius: 10px;
+  width: 280px;
+  height: 280px;
+}
+
+.information-block .experience__wrapper .experience__item .course-title {
+  text-align: center;
+}
+
+.information-block .experience__wrapper .experience__item:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.information-block .contact-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px 0;
+}
+
+.information-block .contact-link .social-network {
+  width: 50px;
+  height: 50px;
+  padding-right: 25px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.information-block .contact-link:hover {
+  color: #FFB800;
+}
+
+.information-block .contact-link:hover .social-network {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.information-block .image {
+  width: 260px;
+  height: 220px;
+  margin-bottom: 20px;
+}
+
+.summary, .code, .education {
+  background: #252525;
+}
+
+.footer {
+  background: #FFB800;
+  color: #020202;
+  padding: 10px;
+}
+
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.footer__wrapper .necessary-links, .footer__wrapper .necessary-links__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 20px;
+  color: #020202;
+}
+
+.footer__wrapper .necessary-links .github, .footer__wrapper .necessary-links .rs-school, .footer__wrapper .necessary-links__item .github, .footer__wrapper .necessary-links__item .rs-school {
+  height: 30px;
+}
+
+.footer__wrapper .necessary-links__item:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
