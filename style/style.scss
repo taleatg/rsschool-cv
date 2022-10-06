@@ -10,6 +10,14 @@ body {
     letter-spacing: 1px;
     background: #020202;
     color: #FFFFFF;
+
+    @media(max-width: 768px) {
+        font-size: 18px;
+    }
+
+    @media(max-width: 481px) {
+        font-size: 16px;
+    }
 }
 
 a {
@@ -25,6 +33,18 @@ a {
 h1 {
     color: #FFB800;
     font-size: 92px;
+
+    @media(max-width: 1200px) {
+        font-size: 68px;
+    }
+
+    @media(max-width: 768px) {
+        font-size: 57px;
+    }
+
+    @media(max-width: 481px) {
+        font-size: 37px;
+    }
 }
 
 h2 {
@@ -41,6 +61,15 @@ li {
 
 code {
     max-width: calc(100vw - 500px);
+    font-size: 16px;
+
+    @media(max-width: 1120px) {
+       font-size: 14px;
+    }
+
+    @media(max-width: 1024px) {
+        max-width: calc(100vw - 100px);
+    }
 }
 
 .header {
@@ -72,26 +101,45 @@ code {
 
 .main-block {
     margin: 0 auto;
-    padding: 20vh 0;
+    padding: 15vh 0 20vh;
     max-width: 1440px;
     display: flex;
     align-items: center;
 
     .main-block__wrapper {
+        padding: 5px;
         display: flex;
         flex-direction: row-reverse;
         flex-wrap: wrap;
         align-items: center;
+        margin: 0 auto;
+        width: 100%;
         justify-content: center;
     }
 
     .main-photo {
-        width: 650px;
+        width: 600px;
+
+        @media(max-width: 1360px) {
+            width: 450px;
+        }
+
+        @media(max-width: 1024px) {
+            width: 300px;
+        }
     }
 
     .developer {
         font-size: 32px;
         margin: -20px 0 100px;
+
+        @media(max-width: 768px) {
+            font-size: 24px;
+        }
+    
+        @media(max-width: 481px) {
+            font-size: 20px;
+        }
     }
 }
 
@@ -110,6 +158,10 @@ code {
         color: #FFFFFF;
         transform: scale(1.1);
     }
+
+    @media(max-width: 768px) {
+        font-size: 18px;
+    }
 }
 
 .information-block {
@@ -124,7 +176,35 @@ code {
         display: flex;
         align-items: center;
         justify-content: space-around;
-        padding: 5vh 0;
+        padding: 5vh 5px;
+
+        .memoji {
+            width: 450px;
+            margin: 20px;
+
+            @media(max-width: 1024px) {
+                width: 350px;
+            }
+
+            @media(max-width: 481px) {
+                width: 250px;
+            }
+        }
+    }
+
+    .content-column {
+
+        @media(max-width: 768px) {
+            flex-direction: column;
+
+            a {
+                margin: 10px 0;
+            }
+
+            .memoji {
+                margin-top: -50px;
+            }
+        }
     }
 
     .text-information {
@@ -135,7 +215,6 @@ code {
         color: #FFB800;
         display: flex;
         justify-content: center;
-        margin-left: 30px;
         flex-wrap: wrap;
     
         .skill_item {
@@ -145,6 +224,18 @@ code {
             border: 2px solid;
             padding: 15px;
             border-radius: 10px;
+
+            @media(max-width: 768px) {
+                width: 100px;
+                height: 100px;
+                margin: 0 20px 20px 0;
+            }
+
+            @media(max-width: 481px) {
+                width: 50px;
+                height: 50px;                
+                margin: 0 10px 20px 0;
+            }
         }
     }
 
@@ -186,6 +277,11 @@ code {
             height: 50px;
             padding-right: 25px;
             transition: 0.5s;
+
+            @media(max-width: 481px) {
+                width: 30px;
+                height: 30px;
+            }
         }        
     
         &:hover {
@@ -204,6 +300,27 @@ code {
     }
 }
 
+.code {
+
+    .content {
+        @media(max-width: 1024px) {
+            flex-direction: column-reverse;
+        }
+
+        .memoji {
+            margin-top: -150px;
+
+            @media(max-width: 1300px) {
+                width: 350px;
+            }
+
+            @media(max-width: 1024px) {
+                margin: -50px 20px 50px;
+            }
+        }
+    }
+}
+
 .summary, .code, .education {
     background: #252525;
 }
@@ -216,6 +333,7 @@ code {
     &__wrapper {
         display: flex;
         align-items: center;
+        text-align: center;
         justify-content: space-between;
         margin: 0 auto;
         max-width: 1440px;

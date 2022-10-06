@@ -29,7 +29,7 @@
     <main class="main">
         <section class="main-block" id="home">
             <div class="main-block__wrapper">
-                <img src="./assets/image/main-photo.webp" alt="main photo" class="main-photo">
+                <img src="./assets/svg/main-photo.svg" alt="main photo" class="main-photo">
                 <div>
                     <h1>Tatsiana Dashuk</h1>
                     <div class="developer">I'm a Frontend Developer</div>
@@ -40,8 +40,8 @@
         <section class="summary" id="summary">
             <div class="information-block">                
                 <h2>About me</h2>
-                <div class="content">
-                    <img src="./assets/image/about-me.webp" alt="about me">
+                <div class="content content-column">
+                    <img src="./assets/svg/about-me.svg" alt="about me" class="memoji">
                     <div>
                         <div class="text-information">
                             I am a junior Frontend developer. I decided to change my career from a teacher where
@@ -81,18 +81,16 @@
 const tea42 = (input) => input.toString().split('2').join('t');
                             </code>
                         </pre>
-                        <a href="https://www.codewars.com/kata/56a298b27e9e994977000023/train/javascript" target="_blank">multiFilter </a>
+                        <a href="https://www.codewars.com/kata/56a298b27e9e994977000023/train/javascript" target="_blank">MultiFilter (task reference)</a>
                         <pre class="prettyprint">
                             <code>
 var multiFilter = function(...args) {
-return (elem) => args.every((fn) => fn(elem));
+    return (elem) => args.every((fn) => fn(elem));
 };
                             </code>
                         </pre>
                     </div>
-                    <div>
-                        <img src="./assets/image/code-examples.webp" alt="code examples">
-                    </div>
+                    <img src="./assets/svg/code-examples.svg" alt="code examples" class="memoji">
                 </div>
             </div>
         </section>
@@ -160,8 +158,8 @@ return (elem) => args.every((fn) => fn(elem));
         <section class="contacts" id="contacts">
             <div class="information-block">
                 <h2>Contact info</h2>
-                <div class="content">
-                    <img src="./assets/image/contact_me.webp" alt="contact info">
+                <div class="content content-column">
+                    <img src="./assets/svg/contact_me.svg" alt="contact info" class="memoji">
                     <ul>
                         <li>
                             <a href="https://www.linkedin.com/in/tatsiana-dashuk/" target="_blank" class="contact-link">
