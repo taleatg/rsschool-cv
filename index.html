@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./style/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/image/profile_icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/agate.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <title>Tatsiana Dashuk</title>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <div class="burger-wrapper">
+                <div class="burger">
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                </div>
+                <ul class="burger-navigation">
+                    <li><a href="#home" class="navigation__item">Home</a></li>
+                    <li><a href="#summary" class="navigation__item">About</a></li>
+                    <li><a href="#skills" class="navigation__item">Skills</a></li>
+                    <li><a href="#code" class="navigation__item">Code examples</a></li>
+                    <li><a href="#experience" class="navigation__item">Experience</a></li>
+                    <li><a href="#education" class="navigation__item">Education</a></li>
+                    <li><a href="#contacts" class="navigation__item">Contacts</a></li>
+                </ul>
+            </div>
+
+            <ul class="navigation">
+                <li><a href="#home" class="navigation__item">Home</a></li>
+                <li><a href="#summary" class="navigation__item">About</a></li>
+                <li><a href="#skills" class="navigation__item">Skills</a></li>
+                <li><a href="#code" class="navigation__item">Code examples</a></li>
+                <li><a href="#experience" class="navigation__item">Experience</a></li>
+                <li><a href="#education" class="navigation__item">Education</a></li>
+                <li><a href="#contacts" class="navigation__item">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="main">
+        <section class="main-block" id="home">
+            <div class="main-block__wrapper">
+                <img src="./assets/svg/main-photo.svg" alt="main photo" class="main-photo">
+                <div>
+                    <h1>Tatsiana Dashuk</h1>
+                    <div class="developer">I'm a Frontend Developer</div>
+                    <div class="button"><a href="#contacts">Contact me</a></div>
+                </div>
+            </div>
+        </section>
+        <section class="summary" id="summary">
+            <div class="information-block">                
+                <h2>About me</h2>
+                <div class="content content-column">
+                    <img src="./assets/svg/about-me.svg" alt="about me" class="memoji">
+                    <div>
+                        <div class="text-information">
+                            I am a junior Frontend developer. I decided to change my career from a teacher where
+                            I taught children basic programming and math to a developer. At the present time I am actively
+                            learning JS, TS, React, taking different trainings. Every day I use my coding skills, improve
+                            them and learn something new. I believe that there is no limit to perfection and is necessary
+                            to study all life. Currently I am looking for an opportunity to start my career as a Fronted developer.
+                        </div>
+                        <div class="button"><a href="./assets/image/CV_TatsianaDashuk.png" download>Download Resume</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="skills" id="skills">
+            <div class="information-block">
+                <h2>My Skills</h2>
+                <div class="content">
+                    <ul class="skills_wrapper">
+                        <li><img src="./assets/svg/html5.svg" alt="html5" class="skill_item"></li>
+                        <li><img src="./assets/svg/css3.svg" alt="css3" class="skill_item"></li>
+                        <li><img src="./assets/svg/sass.svg" alt="sass" class="skill_item"></li>
+                        <li><img src="./assets/svg/javascript.svg" alt="javascript" class="skill_item"></li>
+                        <li><img src="./assets/svg/typescript.svg" alt="typescript" class="skill_item"></li>
+                        <li><img src="./assets/svg/react.svg" alt="react" class="skill_item"></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="code" id="code">
+            <div class="information-block">
+                <h2>Code examples</h2>
+                <div class="content">
+                    <div>
+                        <a href="https://www.codewars.com/kata/555a7dc335d4c407af00006e/train/javascript" target="_blank">Tea for two (task reference)</a>
+                        <pre class="prettyprint">
+                            <code>
+const tea42 = (input) => input.toString().split('2').join('t');
+                            </code>
+                        </pre>
+                        <a href="https://www.codewars.com/kata/56a298b27e9e994977000023/train/javascript" target="_blank">MultiFilter (task reference)</a>
+                        <pre class="prettyprint">
+                            <code>
+var multiFilter = function(...args) {
+    return (elem) => args.every((fn) => fn(elem));
+};
+                            </code>
+                        </pre>
+                    </div>
+                    <img src="./assets/svg/code-examples.svg" alt="code examples" class="memoji">
+                </div>
+            </div>
+        </section>
+        <section class="experience" id="experience">
+            <div class="information-block">
+                <h2>Experience</h2>
+                <div class="content">
+                    <ul class="experience__wrapper">
+                        <li>
+                            <a href="https://rest-countries-api-by-taleatg.netlify.app/" target="_blank" class="experience__item">
+                                <img src="./assets/image/rest-countries-api.JPG" alt="REST-Countries-API" class="image">
+                                <div>REST-Countries-API</div>
+                            </a>
+                        </li>
+                         <li>
+                            <a href="https://taleatg.github.io/christmas-tree/" target="_blank" class="experience__item">
+                                <img src="./assets/image/christmas_tree.JPG" alt="Christmas Tree" class="image">
+                                <div>Christmas Tree</div>
+                            </a>
+                        </li>
+                         <li>
+                             <a href="https://taleatg.github.io/museum/" target="_blank" class="experience__item">
+                                 <img src="./assets/image/museum.JPG" alt="Museum" class="image">
+                                 <div>Museum</div>
+                             </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="education" id="education">
+            <div class="information-block">
+                <h2>Education</h2>
+                <div class="content">
+                    <ul class="experience__wrapper">
+                        <li>
+                            <a href="https://app.rs.school/certificate/cqprew46" target="_blank" class="experience__item">
+                                <img src="./assets/image/JS_pre-school.JPG" alt="JS/FE pre-school" class="image">
+                                <div class="course-title">JS/FE Pre-School at The Rolling Scopes School (July 2021 - Sept. 2021)</div>
+                            </a>
+                        </li>
+                        <li>
+                             <a href="https://app.rs.school/certificate/dvqife9k" target="_blank" class="experience__item">
+                                <img src="./assets/image/JS_FE.JPG" alt="JS/FE 2022" class="image">
+                                <div class="course-title">JAVASCRIPT/FRONT-END 2021Q3 The Rolling Scopes School (Sept. 2021 - Mar. 2022)</div>
+                             </a>
+                        </li>
+                        <li>
+                             <a href="https://app.rs.school/certificate/hw655fxf" target="_blank" class="experience__item">
+                                <img src="./assets/image/React.JPG" alt="React" class="image">
+                                <div class="course-title">React 2022 Q1 The Rolling Scopes School (Mar. 2022 - June 2022)</div>
+                             </a>
+                        </li>
+                        <li>
+                             <a href="https://app.rs.school/certificate/1ql9anb2" target="_blank" class="experience__item">
+                                <img src="./assets/image/NodeJS.JPG" alt="NodeJS" class="image">
+                                <div class="course-title">NodeJS 2022 Q2 The Rolling Scopes School (June 2022 - July 2022)</div>
+                             </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="english">Now my English level is A2, but I'm working on it.</div>
+            </div>
+        </section>
+        <section class="contacts" id="contacts">
+            <div class="information-block">
+                <h2>Contact info</h2>
+                <div class="content content-column">
+                    <img src="./assets/svg/contact_me.svg" alt="contact info" class="memoji">
+                    <ul>
+                        <li>
+                            <a href="https://www.linkedin.com/in/tatsiana-dashuk/" target="_blank" class="contact-link">
+                                <img src="./assets/svg/linkedin.svg" alt="Linkedin" class="social-network">
+                                <div>Linkedin</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://t.me/taleatg" target="_blank" class="contact-link">
+                                <img src="./assets/svg/telegram.svg" alt="Telegram" class="social-network">
+                                <div>@taleatg</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:tatsiana.dashuk@gmail.com" target="_blank" class="contact-link">
+                                <img src="./assets/svg/gmail.svg" alt="Gmail" class="social-network">
+                                <div>tatsiana.dashuk@gmail.com</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://join.skype.com/invite/i0hbVHKUdf4J" target="_blank" class="contact-link">
+                                <img src="./assets/svg/skype.svg" alt="Skype"  class="social-network">
+                                <div>live: .cid.892fd13a33567fb9</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div>© September 2022</div>
+            <div class="necessary-links">
+                <a href="https://github.com/taleatg" target="_blank" class="necessary-links__item">
+                    <img src="./assets/image/github.png" alt="github" class="github">
+                    <div>Tatsiana Dashuk</div>
+                </a>
+                <a href="https://rs.school/js-en/" target="_blank" class="necessary-links__item">
+                    <img src="./assets/image/rsschool.png" alt="rs-school" class="rs-school">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
