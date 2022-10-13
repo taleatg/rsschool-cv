@@ -15,6 +15,23 @@
 <body>
     <header class="header">
         <nav>
+            <div class="burger-wrapper">
+                <div class="burger">
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                </div>
+                <ul class="burger-navigation">
+                    <li><a href="#home" class="navigation__item">Home</a></li>
+                    <li><a href="#summary" class="navigation__item">About</a></li>
+                    <li><a href="#skills" class="navigation__item">Skills</a></li>
+                    <li><a href="#code" class="navigation__item">Code examples</a></li>
+                    <li><a href="#experience" class="navigation__item">Experience</a></li>
+                    <li><a href="#education" class="navigation__item">Education</a></li>
+                    <li><a href="#contacts" class="navigation__item">Contacts</a></li>
+                </ul>
+            </div>
+
             <ul class="navigation">
                 <li><a href="#home" class="navigation__item">Home</a></li>
                 <li><a href="#summary" class="navigation__item">About</a></li>
@@ -26,6 +43,7 @@
             </ul>
         </nav>
     </header>
+    
     <main class="main">
         <section class="main-block" id="home">
             <div class="main-block__wrapper">
@@ -190,6 +208,7 @@ var multiFilter = function(...args) {
             </div>
         </section>
     </main>
+
     <footer class="footer">
         <div class="footer__wrapper">
             <div>© September 2022</div>
@@ -204,5 +223,7 @@ var multiFilter = function(...args) {
             </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

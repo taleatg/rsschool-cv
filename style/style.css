@@ -20,7 +20,7 @@ body {
 
 @media (max-width: 481px) {
   body {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -118,9 +118,100 @@ code {
   color: #FFB800;
 }
 
+@media (max-width: 860px) {
+  .header .navigation {
+    display: none;
+  }
+}
+
+.header .burger-wrapper {
+  display: none;
+}
+
+.header .burger-wrapper .burger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 10px;
+  height: 25px;
+  background: #020202;
+}
+
+.header .burger-wrapper .burger .burger-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 4px;
+  width: 32px;
+  margin-bottom: 5px;
+  background: #FFB800;
+}
+
+.header .burger-wrapper .burger .burger-line:last-child {
+  margin-bottom: 0;
+}
+
+.header .burger-wrapper .burger-navigation {
+  position: absolute;
+  left: -100vw;
+  margin: 0;
+  height: 100vh;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.header .burger-wrapper .burger-navigation li {
+  margin: 20px 30px;
+  font-size: 20px;
+}
+
+@media (max-width: 860px) {
+  .header .burger-wrapper {
+    display: block;
+  }
+}
+
+.header .active {
+  left: 0;
+}
+
+.header .active .burger-line:nth-child(1) {
+  position: relative;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 10px;
+}
+
+.header .active .burger-line:nth-child(2) {
+  display: none;
+}
+
+.header .active .burger-line:nth-child(3) {
+  position: relative;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 1px;
+}
+
+.header .active .burger-navigation {
+  left: 0;
+  opacity: 1;
+  background: #020202;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 .main-block {
   margin: 0 auto;
-  padding: 15vh 0 20vh;
+  padding: 18vh 0 20vh;
   max-width: 1440px;
   display: -webkit-box;
   display: -ms-flexbox;
